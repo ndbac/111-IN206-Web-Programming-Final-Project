@@ -8,10 +8,10 @@ export const Navigation = () => {
     <>
       <div id="sidebar" className={sideBar ? 'block' : 'hidden'}>
         <div
-          className="bg-black w-full h-full absolute opacity-30"
+          className="bg-black w-full h-full absolute opacity-30 z-50"
           onClick={() => setSideBar(!sideBar)}
         ></div>
-        <div className="absolute min-w-[70%] min-h-full bg-white">
+        <div className="z-50 absolute min-w-[70%] min-h-full bg-white">
           <div>
             <div className="flex py-5 my-16 pl-10 hover:cursor-pointer">
               <h1 className="text-bold text-xl md:text-3xl font-semibold">
@@ -34,10 +34,10 @@ export const Navigation = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-2xl items-center justify-center bg-black mx-auto py-[5%] lg:py-[2%] grid grid-cols-3">
+      <div className="z-20 w-screen max-w-screen-2xl items-center justify-center absolute mx-auto py-[5%] lg:py-[2%] grid grid-cols-3">
         <div className="flex ml-8 md:ml-10">
           <FiAlignLeft
-            className="text-white text-2xl md:text-4xl -ml-3 mr-3 md:mr-5 lg:hidden"
+            className="text-white text-2xl md:text-4xl -ml-3 mr-3 md:mr-5 lg:hidden hover:cursor-pointer"
             onClick={() => setSideBar(!sideBar)}
           />
           <div className="hover:cursor-pointer flex text-white hover:text-slate-200">
@@ -48,8 +48,8 @@ export const Navigation = () => {
           </div>
         </div>
         <div className="flex justify-center -mx-5 lg:mx-0">
-          <h1 className="max-w-fit text-xl md:text-4xl w-fit font-bold font-montserrat text-white hover:text-slate-200 hover:cursor-pointer">
-            Welcome to Hanoi
+          <h1 className="max-w-fit text-xl text-center md:text-4xl w-fit font-bold font-montserrat text-white hover:text-slate-200 hover:cursor-pointer">
+            Welcome to Vietnam
           </h1>
         </div>
         <div className="flex items-center justify-end">
@@ -65,7 +65,7 @@ export const Navigation = () => {
             </h1>
           </div>
           <div className="lg:mx-10 mr-5">
-            <button className="text-sm md:text-lg font-bold duration-200 md:hover:bg-blue-700 md:bg-white md:py-2 md:px-5 md:rounded-full text-white md:text-black hover:cursor-pointer">
+            <button className="hover:text-white text-sm md:text-lg font-bold duration-200 md:hover:bg-blue-600 md:bg-white md:py-2 md:px-5 md:rounded-full text-white md:text-black hover:cursor-pointer">
               Subscribe
             </button>
           </div>
