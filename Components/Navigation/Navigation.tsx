@@ -1,7 +1,7 @@
 import { FiSearch, FiAlignLeft, FiArrowUpCircle } from 'react-icons/fi';
 import { useState } from 'react';
 
-export const Navigation = () => {
+export const NavigationBar = () => {
   const [sideBar, setSideBar] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ export const Navigation = () => {
           </div>
         </div>
       </div>
-      <div className="z-20 w-screen max-w-screen-2xl items-center justify-center absolute mx-auto py-[5%] lg:py-[2%] grid grid-cols-3">
+      <div className="z-20 left-0 right-0 w-screen max-w-screen-2xl items-center justify-center absolute mx-auto py-[5%] lg:py-[2%] grid grid-cols-3">
         <div className="flex ml-8 md:ml-10">
           <FiAlignLeft
             className="text-white text-2xl md:text-4xl -ml-3 mr-3 md:mr-5 lg:hidden hover:cursor-pointer"
@@ -48,7 +48,7 @@ export const Navigation = () => {
           </div>
         </div>
         <div className="flex justify-center -mx-5 lg:mx-0">
-          <h1 className="max-w-fit text-xl text-center md:text-4xl w-fit font-bold font-montserrat text-white hover:text-slate-200 hover:cursor-pointer">
+          <h1 className="max-w-fit text-xl text-center md:text-4xl ml-0 xl:ml-0 lg:-ml-[80%] w-fit font-bold font-montserrat text-white hover:text-slate-200 hover:cursor-pointer">
             Welcome to Vietnam
           </h1>
         </div>
