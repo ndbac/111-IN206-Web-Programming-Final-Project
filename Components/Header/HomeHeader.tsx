@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { TouristAttraction } from '../../assets/tourist-attraction';
+import { TouristAttraction } from '../../assets/touristAttraction';
 import { FiArrowRight } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -49,7 +49,7 @@ export const DiscoveryCard = (props: {
       </div>
       <img
         src={props.pictureUrl}
-        alt="Cau Vang - Vietnam"
+        alt={props.content}
         className="object-cover min-h-screen opacity-70 hover:opacity-100 group-hover:scale-110 group-hover:-translate-y-1 transition ease-in-out duration-700"
       />
     </div>
@@ -61,7 +61,11 @@ export const HomeHeader = () => {
     <>
       <div className="absolute left-0 right-0 text-center max-w-7xl mx-auto mt-[40%] lg:mt-[16%] z-20">
         <Typed
-          strings={['Discovery story-worthy travel moments']}
+          strings={[
+            'Discovery story-worthy travel moments',
+            'The best of Vietnam, digitized',
+            "We're here to tell Vietnam's story to the world!",
+          ]}
           typeSpeed={200}
           backSpeed={150}
           loop
@@ -90,7 +94,6 @@ export const HomeHeader = () => {
             spaceBetween: 0,
           },
         }}
-        mousewheel={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
