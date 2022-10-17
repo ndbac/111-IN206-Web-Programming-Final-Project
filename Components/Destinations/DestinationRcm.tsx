@@ -22,7 +22,7 @@ const destinationData = [
 export const DestinationRecommended = () => {
   return (
     <>
-      <div className="container max-w-screen-2xl mx-auto mt-20 mb-40">
+      <div className="container max-w-screen-xl mx-auto mt-20 mb-40">
         <div className="mx-10 mb-10 md:mb-14">
           <h3 className="uppercase text-slate-700 font-bold">Plan your trip</h3>
           <div className="flex justify-between">
@@ -43,7 +43,7 @@ export const DestinationRecommended = () => {
                 alt={des.title}
                 className="hover:cursor-pointer object-cover w-[100%] h-48 md:h-[70%] lg:h-[100%] rounded-2xl group-hover:scale-110 group-hover:-translate-y-1 transition ease-in-out duration-700"
               />
-              <button className="font-bold text-xl lg:text-2xl pt-4 w-full text-left group-hover:text-slate-800">
+              <button className="font-bold text-lg lg:text-xl pt-4 w-full text-left group-hover:text-slate-800">
                 {des.title}
               </button>
             </div>

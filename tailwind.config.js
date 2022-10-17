@@ -10,6 +10,7 @@ module.exports = {
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
       montserrat: ['sans-serif', 'Montserrat'],
+      base: ['PangeaAfrikan', 'sans-serif'],
     },
     extend: {},
   },
