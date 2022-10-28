@@ -12,7 +12,11 @@ module.exports = {
       montserrat: ['sans-serif', 'Montserrat'],
       base: ['PangeaAfrikan', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'home-banner': "url('../assets/vietNamDes/saigon.jpg')",
+      },
+    },
   },
   plugins: [],
 };
