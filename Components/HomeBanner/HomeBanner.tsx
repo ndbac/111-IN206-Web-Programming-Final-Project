@@ -16,7 +16,7 @@ export const HomeBanner = () => {
           </h1>
 
           <div className="md:flex max-w-4xl mx-5 lg:mx-auto">
-            <p className="text-white text-xl md:text-[20px] text-left md:max-w-[70%]">
+            <p className="text-white text-xl md:text-[20px] text-center md:text-left md:max-w-[70%]">
               The results are in! Explore this year's expert-approved list of
               must-see destinations, places, and unforgettable experiences
               guaranteed to inspire.
