@@ -82,7 +82,7 @@ export const StoryCard = (props: {
           <p>{props.createdAt}</p>
           <p>&nbsp;-&nbsp;{props.readingTime} min read</p>
         </div>
-        <p className="mt-5 text-sm">{props.description.slice(0, 200)}...</p>
+        <p className="mt-5 text-sm">{props.description.slice(0, 150)}...</p>
       </div>
     </div>
   );
