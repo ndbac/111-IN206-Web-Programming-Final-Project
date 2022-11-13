@@ -1,16 +1,12 @@
 import type { NextPage } from 'next';
 import { NavigationBar } from '../Components/Navigation/Navigation';
-import { HomeHeader } from '../Components/Header/HomeHeader';
-import { DestinationRecommended } from '../Components/Destinations/DestinationRcm';
-import { HomeBanner } from '../Components/HomeBanner/HomeBanner';
+import { HomePage } from '../Components/HomePage';
 
 const Home: NextPage = () => {
   return (
     <>
       <NavigationBar />
-      <HomeHeader />
-      <DestinationRecommended />
-      <HomeBanner />
+      <HomePage />
     </>
   );
 };
