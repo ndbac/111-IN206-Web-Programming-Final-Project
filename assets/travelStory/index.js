@@ -1,7 +1,7 @@
 import food from './food.jpg';
 import haGiang from './haGiang.jpg';
 import hoiAn from './hoiAn.jpg';
-import catBa from './catBa.png';
+import catBa from './catba.png';
 import choNoi from './choNoi.png';
 
 export const TravelStories = {
