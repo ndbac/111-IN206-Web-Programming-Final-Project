@@ -94,84 +94,86 @@ export const ExploreStories = () => {
 
   return (
     <>
-      <div className="md:flex justify-between max-w-screen-2xl mx-16 lg:mx-auto mt-28 mb-12 relative pb-24 md:pb-0">
-        <div className="max-w-md">
-          <p className="uppercase text-gray-700 font-bold">
-            Travel stories and news
-          </p>
-          <h3 className="font-bold text-5xl mt-8 mb-8 md:mb-0">
-            Explore our latest stories
-          </h3>
-        </div>
-        <div className="mt-32 absolute right-0 bottom-0">
-          <button className="text-sm border my-1 md:my-0 md:mx-2 rounded-full px-8 py-[7px] font-semibold hover:bg-blue-600 hover:text-white">
-            View all news
-          </button>
-          <button className="text-sm border my-1 md:my-0 md:mx-2 rounded-full px-8 py-[7px] font-semibold hover:bg-blue-600 hover:text-white">
-            View all stories
-          </button>
-        </div>
-      </div>
-      <div className="grid grid-cols-5 gap-10 max-w-screen-2xl mx-5 md:mx-16 lg:mx-auto mb-28">
-        <div className="col-span-5 lg:col-span-3 bg-black max-h-[35rem] rounded-3xl overflow-hidden">
-          <div className="relative">
-            <img
-              src={hightLightStory.pictureUrl}
-              alt={hightLightStory.title}
-              className="h-[35rem] w-full object-cover opacity-60"
-            />
-            <div className="absolute bottom-8 ml-10 mr-10 md:mr-36 text-white">
-              <p className="font-bold text-sm md:text-lg hover:underline hover:cursor-pointer">
-                {hightLightStory.category}
-              </p>
-              <h1 className="font-black text-2xl md:text-4xl hover:underline hover:cursor-pointer">
-                {hightLightStory.title}
-              </h1>
-              <div className="flex font-bold text-sm md:text-md">
-                <p>{hightLightStory.createdAt}</p>
-                <p>&nbsp;-&nbsp;{hightLightStory.readingTime} min read</p>
-              </div>
-              <p className="mt-10 text-sm md:text-md">
-                {hightLightStory.description}
-              </p>
-            </div>
+      <div className="lg:mx-24">
+        <div className="md:flex justify-between max-w-screen-2xl mx-16 lg:mx-auto mt-28 mb-12 relative pb-24 md:pb-0">
+          <div className="max-w-md">
+            <p className="uppercase text-gray-700 font-bold">
+              Travel stories and news
+            </p>
+            <h3 className="font-bold text-5xl mt-8 mb-8 md:mb-0">
+              Explore our latest stories
+            </h3>
+          </div>
+          <div className="mt-32 absolute right-0 bottom-0">
+            <button className="text-sm border my-1 md:my-0 md:mx-2 rounded-full px-8 py-[7px] font-semibold hover:bg-blue-600 hover:text-white">
+              View all news
+            </button>
+            <button className="text-sm border my-1 md:my-0 md:mx-2 rounded-full px-8 py-[7px] font-semibold hover:bg-blue-600 hover:text-white">
+              View all stories
+            </button>
           </div>
         </div>
-        <div className="col-span-5 lg:col-span-2 flex relative pb-10">
-          <Swiper
-            navigation={{ prevEl: swiperPrevEl, nextEl: swiperNextEl }}
-            modules={[Navigation]}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
-            }}
-            className="mySwiper"
-          >
-            {storyData.map(story => (
-              <SwiperSlide key={story.id}>
-                <StoryCard
-                  category={story.category}
-                  title={story.title}
-                  createdAt={story.createdAt}
-                  readingTime={story.readingTime}
-                  description={story.description}
-                  pictureUrl={story.pictureUrl}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="flex absolute -bottom-4 right-2">
-            <div ref={node => setSwiperPrevEl(node)}>
-              <BsArrowLeftCircle className="text-3xl mx-2 hover:cursor-pointer text-gray-700 hover:text-black" />
+        <div className="grid grid-cols-5 gap-10 max-w-screen-2xl mx-5 md:mx-16 lg:mx-auto mb-28">
+          <div className="col-span-5 lg:col-span-3 bg-black max-h-[35rem] rounded-3xl overflow-hidden">
+            <div className="relative">
+              <img
+                src={hightLightStory.pictureUrl}
+                alt={hightLightStory.title}
+                className="h-[35rem] w-full object-cover opacity-60"
+              />
+              <div className="absolute bottom-8 ml-10 mr-10 md:mr-36 text-white">
+                <p className="font-bold text-sm md:text-lg hover:underline hover:cursor-pointer">
+                  {hightLightStory.category}
+                </p>
+                <h1 className="font-black text-2xl md:text-4xl hover:underline hover:cursor-pointer">
+                  {hightLightStory.title}
+                </h1>
+                <div className="flex font-bold text-sm md:text-md">
+                  <p>{hightLightStory.createdAt}</p>
+                  <p>&nbsp;-&nbsp;{hightLightStory.readingTime} min read</p>
+                </div>
+                <p className="mt-10 text-sm md:text-md">
+                  {hightLightStory.description}
+                </p>
+              </div>
             </div>
-            <div ref={node => setSwiperNextEl(node)}>
-              <BsArrowRightCircle className="text-3xl mx-2 hover:cursor-pointer text-gray-700 hover:text-black" />
+          </div>
+          <div className="col-span-5 lg:col-span-2 flex relative pb-10">
+            <Swiper
+              navigation={{ prevEl: swiperPrevEl, nextEl: swiperNextEl }}
+              modules={[Navigation]}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+              }}
+              className="mySwiper"
+            >
+              {storyData.map(story => (
+                <SwiperSlide key={story.id}>
+                  <StoryCard
+                    category={story.category}
+                    title={story.title}
+                    createdAt={story.createdAt}
+                    readingTime={story.readingTime}
+                    description={story.description}
+                    pictureUrl={story.pictureUrl}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="flex absolute -bottom-4 right-2">
+              <div ref={node => setSwiperPrevEl(node)}>
+                <BsArrowLeftCircle className="text-3xl mx-2 hover:cursor-pointer text-gray-700 hover:text-black" />
+              </div>
+              <div ref={node => setSwiperNextEl(node)}>
+                <BsArrowRightCircle className="text-3xl mx-2 hover:cursor-pointer text-gray-700 hover:text-black" />
+              </div>
             </div>
           </div>
         </div>
