@@ -4,7 +4,6 @@ import { TravelerAccounts } from '../../assets/travelerAccount';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import { Navigation } from 'swiper';
 
 const travelerData = [
   {
@@ -74,7 +73,6 @@ export const TravelerAccount = () => {
         </div>
         <div className="pb-16">
           <Swiper
-            // modules={[Autoplay, Mousewheel, Pagination]}
             pagination={{
               clickable: true,
             }}
