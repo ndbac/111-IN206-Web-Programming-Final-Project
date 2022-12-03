@@ -52,7 +52,7 @@ export const Footer = () => {
   return (
     <>
       <div className="w-max-screen-xl mx-auto container">
-        <div className="text-center md:text-left justify-center md:grid md:grid-cols-5 mt-24 mx-5 lg:mx-0">
+        <div className="text-center md:text-left justify-center md:grid md:grid-cols-5 mt-24 mx-5 md:mx-10">
           <div className="col-span-2 lg:max-w-[70%]">
             <h1 className="text-3xl lg:text-5xl text-blue-700 font-black md:max-w-[90%] lg:max-w-full">
               Welcome to Vietnam
@@ -147,7 +147,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black py-16 mt-16">
+      <div className="bg-black py-16 mt-16 px-10">
         <div className="w-max-screen-xl mx-auto container lg:flex text-center items-center justify-between">
           <p className="text-white mx-5 text-sm md:text-md">
             © 2022 Welcome to Vietnam. All rights reserved. No part of this site

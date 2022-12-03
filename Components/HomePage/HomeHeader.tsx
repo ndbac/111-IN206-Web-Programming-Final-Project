@@ -29,7 +29,8 @@ const discoveryData = [
     id: 2,
   },
   {
-    content: 'The top food and drink you must try in Hai Phong',
+    content:
+      'The top food and drink you must try in Hai Phong, Vietnam in the weekend',
     pictureUrl: TouristAttraction.hoiAn,
     id: 3,
   },
@@ -40,12 +41,12 @@ export const DiscoveryCard = (props: {
   pictureUrl: string;
 }) => {
   return (
-    <div className="hover:cursor-pointer group overflow-hidden">
-      <div className="z-20 group absolute flex items-end bottom-10">
-        <h1 className="text-white text-xl md:text-2xl ml-5 lg:max-w-[82%] md:max-w-[70%] max-w-[80%]">
+    <div className="hover:cursor-pointer group overflow-hidden relative">
+      <div className="flex">
+        <h1 className="bottom-10 z-20 group absolute text-white text-xl md:text-2xl ml-5 lg:max-w-[82%] md:max-w-[70%] max-w-[80%]">
           {props.content}
         </h1>
-        <FiArrowRight className="ml-4 text-white text-5xl mr-5 md:mr-10 group-hover:translate-x-6 duration-500" />
+        <FiArrowRight className="bottom-10 z-20 group absolute right-4 md:right-10 text-white text-5xl group-hover:translate-x-6 duration-500" />
       </div>
       <img
         src={props.pictureUrl}
