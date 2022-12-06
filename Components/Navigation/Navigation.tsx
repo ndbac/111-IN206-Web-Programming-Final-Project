@@ -1,5 +1,6 @@
 import { FiSearch, FiAlignLeft, FiArrowUpCircle } from 'react-icons/fi';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export const NavigationBar = () => {
   const [sideBar, setSideBar] = useState(false);
@@ -48,9 +49,11 @@ export const NavigationBar = () => {
           </div>
         </div>
         <div className="flex justify-center -mx-5 lg:mx-0">
-          <h1 className="max-w-fit text-xl text-center md:text-4xl ml-0 xl:ml-0 lg:-ml-[80%] w-fit font-bold text-white hover:text-slate-200 hover:cursor-pointer">
-            Welcome to Vietnam
-          </h1>
+          <Link href="/">
+            <h1 className="max-w-fit text-xl text-center md:text-4xl ml-0 xl:ml-0 lg:-ml-[80%] w-fit font-bold text-white hover:text-slate-200 hover:cursor-pointer">
+              Welcome to Vietnam
+            </h1>
+          </Link>
         </div>
         <div className="flex items-center justify-end">
           <div className="lg:flex hidden">
@@ -65,9 +68,11 @@ export const NavigationBar = () => {
             </h1>
           </div>
           <div className="lg:mx-10 mr-5">
-            <button className="hover:text-white text-sm md:text-lg font-bold duration-200 md:hover:bg-blue-600 md:bg-white md:py-2 md:px-5 md:rounded-full text-white md:text-black hover:cursor-pointer">
-              Subscribe
-            </button>
+            <Link href="newsletter">
+              <button className="hover:text-white text-sm md:text-lg font-bold duration-200 md:hover:bg-blue-600 md:bg-white md:py-2 md:px-5 md:rounded-full text-white md:text-black hover:cursor-pointer">
+                Subscribe
+              </button>
+            </Link>
           </div>
         </div>
       </div>
