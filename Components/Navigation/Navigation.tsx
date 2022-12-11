@@ -15,9 +15,11 @@ export const NavigationBar = () => {
         <div className="z-50 absolute min-w-[70%] min-h-full bg-white">
           <div>
             <div className="flex py-5 my-16 pl-10 hover:cursor-pointer">
-              <h1 className="text-bold text-xl md:text-3xl font-semibold">
-                Destinations
-              </h1>
+              <Link href="/places">
+                <h1 className="text-bold text-xl md:text-3xl font-semibold">
+                  Destinations
+                </h1>
+              </Link>
               <FiArrowUpCircle className="my-auto ml-auto mr-10 text-2xl md:text-3xl rotate-180" />
             </div>
             <div className="flex py-5 my-16 pl-10 hover:cursor-pointer">
@@ -57,9 +59,11 @@ export const NavigationBar = () => {
         </div>
         <div className="flex items-center justify-end">
           <div className="lg:flex hidden">
-            <h1 className="text-lg text-white hover:text-slate-200 mx-2 hover:cursor-pointer">
-              Destinations
-            </h1>
+            <Link href="/places">
+              <h1 className="text-lg text-white hover:text-slate-200 mx-2 hover:cursor-pointer">
+                Destinations
+              </h1>
+            </Link>
             <h1 className="text-lg text-white hover:text-slate-200 mx-2 hover:cursor-pointer">
               Stories
             </h1>
