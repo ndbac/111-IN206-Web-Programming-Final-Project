@@ -121,23 +121,23 @@ export const Places = () => {
           })}
         </div>
         <div className="mt-14">
-          <span className="px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mr-2 rounded-full border">
+          <span className="px-3 md:px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mr-2 rounded-full border">
             {'<'}
           </span>
-          <span className="px-4 py-2 hover:cursor-pointer bg-slate-200 mx-2 rounded-full border">
+          <span className="px-3 md:px-4 py-2 hover:cursor-pointer bg-slate-200 mx-2 rounded-full border">
             1
           </span>
-          <span className="px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
+          <span className="px-3 md:px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
             2
           </span>
           <span className="px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
             3
           </span>
           <span className="mx-2">...</span>
-          <span className="px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
+          <span className="px-3 md:px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
             100
           </span>
-          <span className="px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
+          <span className="px-3 md:px-4 py-2 hover:cursor-pointer hover:bg-slate-200 mx-2 rounded-full border">
             {'>'}
           </span>
         </div>

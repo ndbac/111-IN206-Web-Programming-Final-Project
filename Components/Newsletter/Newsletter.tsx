@@ -13,7 +13,7 @@ export const Newsletter = () => {
             alt="background"
             className="h-[60rem] lg::h-[55rem] w-full object-cover"
           />
-          <div className="absolute top-[10%] md:top-[15%] lg:top-[20%] md:mx-10 px-5 lg:mx-auto lg:max-w-screen-2xl left-0 right-0 mr-auto ml-auto">
+          <div className="absolute top-[10%] md:top-[15%] lg:top-[20%] md:mx-10 px-10 lg:mx-auto lg:max-w-screen-2xl left-0 right-0 mr-auto ml-auto">
             <div className="md:flex">
               <div className="mt-[5%] mx-6 md:mx-0 md:max-w-[65%]">
                 <h1 className="text-white text-5xl md:text-7xl font-bold">

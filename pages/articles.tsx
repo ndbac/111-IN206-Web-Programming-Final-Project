@@ -1,16 +1,16 @@
 import type { NextPage } from 'next';
 import { NavigationBar } from '../Components/Navigation/Navigation';
 import { Footer } from '../Components/Footer/Footer';
-import { Places } from '../Components/Places/Places';
+import { Story } from '../Components/Stories';
 
-const PlacesPage: NextPage = () => {
+const ArticlesPage: NextPage = () => {
   return (
     <>
       <NavigationBar />
-      <Places />
+      <Story />
       <Footer />
     </>
   );
 };
 
-export default PlacesPage;
+export default ArticlesPage;

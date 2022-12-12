@@ -3,7 +3,7 @@ import { NavigationBar } from '../Components/Navigation/Navigation';
 import { Footer } from '../Components/Footer/Footer';
 import { Newsletter } from '../Components/Newsletter/Newsletter';
 
-const Home: NextPage = () => {
+const NewsletterPage: NextPage = () => {
   return (
     <>
       <NavigationBar />
@@ -13,4 +13,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default NewsletterPage;
