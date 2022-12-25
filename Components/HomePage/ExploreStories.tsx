@@ -6,6 +6,8 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
 import { useState } from 'react';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import Link from 'next/link';
+import slugify from 'slugify';
 
 const hightLightStory = {
   title: 'The best 10 street foods in Hanoi',
@@ -75,9 +77,11 @@ export const StoryCard = (props: {
         <p className="font-bold text-md hover:underline hover:cursor-pointer mt-5 text-gray-700 text-sm">
           {props.category}
         </p>
-        <h1 className="font-black text-2xl hover:underline hover:cursor-pointer">
-          {props.title}
-        </h1>
+        <Link href={`/articles/${slugify(props.title)}`}>
+          <h1 className="font-black text-2xl hover:underline hover:cursor-pointer">
+            {props.title}
+          </h1>
+        </Link>
         <div className="flex font-bold text-sm">
           <p>{props.createdAt}</p>
           <p>&nbsp;-&nbsp;{props.readingTime} min read</p>
@@ -125,9 +129,11 @@ export const ExploreStories = () => {
                 <p className="font-bold text-sm md:text-lg hover:underline hover:cursor-pointer">
                   {hightLightStory.category}
                 </p>
-                <h1 className="font-black text-2xl md:text-4xl hover:underline hover:cursor-pointer">
-                  {hightLightStory.title}
-                </h1>
+                <Link href={`/articles/${slugify(hightLightStory.title)}`}>
+                  <h1 className="font-black text-2xl md:text-4xl hover:underline hover:cursor-pointer">
+                    {hightLightStory.title}
+                  </h1>
+                </Link>
                 <div className="flex font-bold text-sm md:text-md">
                   <p>{hightLightStory.createdAt}</p>
                   <p>&nbsp;-&nbsp;{hightLightStory.readingTime} min read</p>
@@ -152,8 +158,7 @@ export const ExploreStories = () => {
                   spaceBetween: 0,
                 },
               }}
-              className="mySwiper"
-            >
+              className="mySwiper">
               {storyData.map(story => (
                 <SwiperSlide key={story.id}>
                   <StoryCard

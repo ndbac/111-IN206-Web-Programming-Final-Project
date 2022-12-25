@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { PostData } from '../../assets/stories';
+import Link from 'next/link';
+import slugify from 'slugify';
 
 const StoryList = [
   {
@@ -94,9 +96,11 @@ export const StoryPost = () => {
                     <p className="uppercase font-black text-sm text-gray-500 hover:cursor-pointer">
                       {story.tags}
                     </p>
-                    <h1 className="text-md md:text-2xl font-bold text-blue-700 hover:cursor-pointer">
-                      {story.title}
-                    </h1>
+                    <Link href={`/articles/${slugify(story.title)}`}>
+                      <h1 className="text-md md:text-2xl font-bold text-blue-700 hover:cursor-pointer">
+                        {story.title}
+                      </h1>
+                    </Link>
                     <p className="text-sm text-gray-500">
                       {story.minRead} min read - {story.date}
                     </p>

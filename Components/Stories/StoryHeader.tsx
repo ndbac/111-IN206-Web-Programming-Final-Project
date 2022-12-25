@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Mousewheel, Pagination } from 'swiper';
+import Link from 'next/link';
+import slugify from 'slugify';
 
 const swiperStyle = {
   '--swiper-pagination-color': '#FFFFFF',
@@ -38,17 +40,21 @@ export const DiscoveryCard = (props: {
 }) => {
   return (
     <div className="hover:cursor-pointer group overflow-hidden relative">
-      <div className="flex">
-        <h1 className="bottom-10 z-20 group absolute text-white text-xl md:text-2xl ml-5 lg:max-w-[82%] md:max-w-[70%] max-w-[80%]">
-          {props.content}
-        </h1>
-        <FiArrowRight className="bottom-10 z-20 group absolute right-4 md:right-10 text-white text-5xl group-hover:translate-x-6 duration-500" />
-      </div>
-      <img
-        src={props.pictureUrl}
-        alt={props.content}
-        className="object-cover min-h-screen opacity-70 hover:opacity-100 group-hover:scale-110 group-hover:-translate-y-1 transition ease-in-out duration-700"
-      />
+      <Link href={`/articles/${slugify(props.content)}`}>
+        <div>
+          <div className="flex">
+            <h1 className="bottom-10 z-20 group absolute text-white text-xl md:text-2xl ml-5 lg:max-w-[82%] md:max-w-[70%] max-w-[80%]">
+              {props.content}
+            </h1>
+            <FiArrowRight className="bottom-10 z-20 group absolute right-4 md:right-10 text-white text-5xl group-hover:translate-x-6 duration-500" />
+          </div>
+          <img
+            src={props.pictureUrl}
+            alt={props.content}
+            className="object-cover min-h-screen opacity-70 hover:opacity-100 group-hover:scale-110 group-hover:-translate-y-1 transition ease-in-out duration-700"
+          />
+        </div>
+      </Link>
     </div>
   );
 };
@@ -87,8 +93,7 @@ export const StoryHeader = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        className="bg-black"
-      >
+        className="bg-black">
         {discoveryData.map(place => (
           <SwiperSlide key={place.id}>
             <DiscoveryCard

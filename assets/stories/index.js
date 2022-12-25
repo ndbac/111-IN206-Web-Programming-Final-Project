@@ -8,6 +8,11 @@ import Post04 from './post04.jpeg';
 import Post05 from './post05.jpeg';
 import Post06 from './post06.jpeg';
 import Post07 from './post07.png';
+import User from './user.jpeg';
+import Thumb01 from './hanoi-tet.jpeg';
+import HoanKiem from './hoankiem.jpeg';
+import TempleOfLiterature from './temple.jpeg';
+import HCMMuseum from './hcm.jpeg';
 
 export const StoryData = {
   phuQuoc: PhuQuoc.src,
@@ -23,4 +28,9 @@ export const PostData = {
   post05: Post05.src,
   post06: Post06.src,
   post07: Post07.src,
+  user: User.src,
+  thumb01: Thumb01.src,
+  hoanKiem: HoanKiem.src,
+  templeOfLiterature: TempleOfLiterature.src,
+  hCMMuseum: HCMMuseum.src,
 };
