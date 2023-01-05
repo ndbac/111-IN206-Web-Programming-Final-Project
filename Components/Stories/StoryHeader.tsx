@@ -93,7 +93,8 @@ export const StoryHeader = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        className="bg-black">
+        className="bg-black"
+      >
         {discoveryData.map(place => (
           <SwiperSlide key={place.id}>
             <DiscoveryCard

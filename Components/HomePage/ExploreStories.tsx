@@ -158,7 +158,8 @@ export const ExploreStories = () => {
                   spaceBetween: 0,
                 },
               }}
-              className="mySwiper">
+              className="mySwiper"
+            >
               {storyData.map(story => (
                 <SwiperSlide key={story.id}>
                   <StoryCard

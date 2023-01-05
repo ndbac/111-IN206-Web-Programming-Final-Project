@@ -10,7 +10,8 @@ export const NavigationBarDark = () => {
       <div id="sidebar" className={sideBar ? 'block' : 'hidden'}>
         <div
           className="bg-black w-full h-full absolute opacity-30 z-50"
-          onClick={() => setSideBar(!sideBar)}></div>
+          onClick={() => setSideBar(!sideBar)}
+        ></div>
         <div className="z-50 absolute min-w-[70%] min-h-full bg-white">
           <div>
             <div className="flex py-5 my-16 pl-10 hover:cursor-pointer">
