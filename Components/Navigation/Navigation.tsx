@@ -47,9 +47,11 @@ export const NavigationBar = () => {
           />
           <div className="hover:cursor-pointer flex content-center text-white hover:text-slate-200">
             <FiSearch className="text-lg md:text-xl my-auto mr-1" />
-            <h1 className="text-lg md:text-xl pt-1 my-auto hidden md:block">
-              Search
-            </h1>
+            <Link href="/search">
+              <h1 className="text-lg md:text-xl pt-1 my-auto hidden md:block">
+                Search
+              </h1>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center -mx-5 lg:mx-0">

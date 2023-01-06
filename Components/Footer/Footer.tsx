@@ -60,10 +60,30 @@ export const Footer = () => {
             <p className="mt-5 text-lg">For Explorers Everywhere</p>
             <p className="mt-10 font-semibold text-md uppercase">Follow us</p>
             <div className="flex mt-2 justify-center md:justify-start">
-              <FaFacebook className="mr-5 text-2xl text-blue-700 hover:cursor-pointer" />
-              <FaLinkedin className="mr-5 text-2xl text-blue-900 hover:cursor-pointer" />
-              <FaTwitter className="mr-5 text-2xl text-blue-500 hover:cursor-pointer" />
-              <FaInstagram className="mr-5 text-2xl text-red-600 hover:cursor-pointer" />
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebook className="mr-5 text-2xl text-blue-700 hover:cursor-pointer" />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin className="mr-5 text-2xl text-blue-900 hover:cursor-pointer" />
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+                <FaTwitter className="mr-5 text-2xl text-blue-500 hover:cursor-pointer" />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram className="mr-5 text-2xl text-red-600 hover:cursor-pointer" />
+              </a>
             </div>
 
             <p className="uppercase text-md mt-10 font-bold">Subscribe</p>

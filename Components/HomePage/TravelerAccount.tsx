@@ -100,9 +100,16 @@ export const TravelerAccount = () => {
                       alt={traveler.pictureUrl}
                       className="h-[26rem] object-cover opacity-60 hover:opacity-100 hover:cursor-pointer transition duration-500"
                     />
-                    <div className="absolute bottom-3 left-3 text-white text-lg">
+                    <a
+                      href={`https://www.instagram.com/${traveler.content.slice(
+                        1,
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:cursor-pointer absolute bottom-3 left-3 text-white text-lg"
+                    >
                       <p>{traveler.content}</p>
-                    </div>
+                    </a>
                   </div>
                 </SwiperSlide>
               );
