@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import { PostData } from '../../assets/stories';
 import { ExploreStories } from '../HomePage/ExploreStories';
 
@@ -29,16 +30,18 @@ export const Articles = () => {
             <h1 className="text-3xl md:text-5xl font-bold mt-7">
               7 Best Places To Go In Hanoi Over Tet Holiday
             </h1>
-            <div className="flex mt-5 md:mt-0 md:justify-end items-center">
+            <div className="flex mt-5 md:justify-end items-center">
               <img
                 className=" w-[50px] md:w-[70px] rounded-full border-blue-400 border-2"
                 src={PostData.user}
                 alt="Writer"
               />
               <div className="ml-5">
-                <p className="hover:cursor-pointer text-lg text-blue-600 font-bold border-b border-blue-600 mb-2">
-                  Nguyen Dinh Bac
-                </p>
+                <Link href={'/profile/dinh-bac-nguyen'}>
+                  <p className="hover:cursor-pointer text-lg text-blue-600 font-bold border-b border-blue-600 mb-2">
+                    Nguyen Dinh Bac
+                  </p>
+                </Link>
                 <p className="text-sm">Dec 22, 2022 - 6 mins read</p>
               </div>
             </div>
