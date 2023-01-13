@@ -31,9 +31,11 @@ export const NavigationBar = () => {
               <FiArrowUpCircle className="my-auto ml-auto mr-10 text-2xl md:text-3xl rotate-180" />
             </div>
             <div className="flex py-5 my-16 pl-10 hover:cursor-pointer">
-              <h1 className="text-bold text-xl md:text-3xl font-semibold">
-                Shop
-              </h1>
+              <Link href="/create">
+                <h1 className="text-bold text-xl md:text-3xl font-semibold">
+                  Create
+                </h1>
+              </Link>
               <FiArrowUpCircle className="my-auto ml-auto mr-10 text-2xl md:text-3xl rotate-180" />
             </div>
           </div>
@@ -73,9 +75,11 @@ export const NavigationBar = () => {
                 Stories
               </h1>
             </Link>
-            <h1 className="text-lg text-white hover:text-slate-200 mx-2 hover:cursor-pointer">
-              Shop
-            </h1>
+            <Link href="/create">
+              <h1 className="text-lg text-white hover:text-slate-200 mx-2 hover:cursor-pointer">
+                Create
+              </h1>
+            </Link>
           </div>
           <div className="lg:mx-10 mr-5">
             <Link href="newsletter">
